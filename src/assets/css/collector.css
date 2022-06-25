@@ -1,0 +1,115 @@
+.collector {
+    padding: 50px 20px;
+}
+.top-collectors {
+    max-width: 1166px;
+    background: #31d7d7;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    margin-bottom: 117px;
+}
+.top-collectors .img-container {
+    text-align: center;
+    padding-top: 55px;
+    padding-right: 32px;
+    padding-bottom: 52px;
+    padding-left: 37px;
+}
+.collector-content {
+    max-width: 1166px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.collector-item {
+    /* max-width: 275px; */
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.collector-item > div:first-child > img {
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+.collector-tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 18px;
+    padding-bottom: 3px;
+    color: #524b4b;
+    font-weight: 600;
+}
+.collector-detail {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    padding-bottom: 15px;
+}
+.collector-title {
+    color: #31d7d7;
+    font-size: 20px;
+    font-weight: 600;
+    display: block;
+}
+.collection-calculation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    height: 55px;
+}
+.division {
+    position: absolute;
+    top: 24px;    
+    width: 100%;
+    border: 1px solid #71969f;
+}
+.collections {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 100%;
+}
+.editions {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 100%;
+}
+.total {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 100%;
+}
+.property {
+    color: black;
+    font-weight: bold;
+}
+.value {
+    color: #f95dce;
+    font-weight: bold;
+    font-size: large;
+}
+.collector-description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #444444;
+    font-size: larger;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 1134px) {
+    .collector-content {
+        justify-content: space-around;
+    }
+}

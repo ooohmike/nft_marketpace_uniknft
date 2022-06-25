@@ -1,0 +1,247 @@
+.filter {
+  width: 250px;
+  min-height: 700px;
+  margin-right: 60px;
+  margin-top: 60px;
+  text-align: center;
+  font-family: "PagesGrotesqueRegularDemo";
+}
+
+.filter .title {
+  font-size: 40px;
+  color: #71969f;
+}
+
+.filter .status-filter {
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #71969f;
+}
+
+.filter .status-title {
+  font-size: 40px;
+  color: #313131;
+}
+
+.filter .status-filter .status-property {
+  padding: 10px;
+  background-color: #71969f;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.filter .status-filter .status-property:hover, .filter .status-filter .status-property:active {
+    background-color: #000;
+}
+
+.status-grid-system {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+}
+
+.status-left {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 100%;
+}
+
+.status-right {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 100%;
+}
+
+.filter .price-filter {
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #71969f;
+}
+
+.price-property {
+  color: #4a3636;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.filter .price-filter .filter-price-range {
+  position: relative;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #71969f;
+  margin-bottom: 10px;
+}
+
+.filter-price-range::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 10px;
+  left: 50%;
+  width: 1px;
+  height: calc(100% - 10px);
+  background-color: #71969f;
+}
+
+.price-filter .filter-price-range input {
+  width: 40%;
+  outline: none;
+  border: 1px solid #bbb;
+  font-size: 16px;
+  color: #333;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* .horizontal-line {
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    width: 90%;
+    border: 1px solid #71969f;
+} */
+
+.vertical-line {
+  border: 1px solid #71969f;
+  height: 60px;
+}
+
+.filter .market-price {
+  font-size: 40px;
+  color: #313131;
+}
+
+.price-grid-system {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.price-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90px;
+}
+
+.filter .price-filter .btn-apply-price {
+  font-size: 16px;
+  border-radius: 10px;
+  background-color: #71969f;
+  border: none;
+  outline: none;
+}
+
+.filter .chain-filter {
+  padding-bottom: 20px;
+  border-bottom: 2px solid #71969f;
+}
+
+.filter .chain-filter .chain-filter-options {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.filter .chain-filter .filter-chain-option {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.filter .chain-filter .filter-chain-option:not(:last-child) {
+  margin-bottom: 10px;
+}
+.filter .chain-filter .filter-chain-option input {
+  margin-right: 10px;
+}
+
+.filter .aside-top-artists {
+  margin-top: 100px;
+}
+
+.filter .aside-top-artists-title {
+  font-size: 40px;
+  color: #71969f;
+}
+
+.filter .aside-top-artist {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
+.filter .aside-top-artist-label {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  text-align: center;
+  border-bottom: 1px solid #71969f;
+}
+
+.filter .top-artist-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 24px;
+  color: #71969f;
+  font-weight: 600;
+}
+
+/* .space {
+    height: 10px;
+    width: 100%;
+} */
+
+/* .collection-horizontal-line {
+    border: 1px solid #71969f;
+    margin-top: 10px;
+}
+
+
+
+
+
+.force-letter {
+    font-size: 24px;
+    color: #71969f;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.mt-17 {
+    margin-top: 17px;
+} */
+
+.filter-chains-title {
+  font-size: 40px;
+  color: #313131;
+  margin-top: 20px;
+}
+
+.market-sale {
+  font-size: 40px;
+  color: #313131;
+}
+
+.market-chain-property {
+  color: #4a3636;
+  font-weight: 500;
+  font-size: 17px;
+  margin-top: 10px;
+}

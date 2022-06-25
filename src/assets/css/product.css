@@ -1,0 +1,16 @@
+.product {
+    width: 275px;
+    position: relative;
+}
+
+.like-badge {
+    width: 46px;
+    height: 46px;
+    background-color: #bcc5d1;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.like-badge i {
+    font-size: 20px;
+}

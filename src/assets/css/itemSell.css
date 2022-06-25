@@ -1,0 +1,55 @@
+.itemsell .nav-item .active {
+    border: 2px solid #2ba9cd !important;
+    border-radius: 5px;
+    padding: 15px 30px;
+}
+
+.itemsell .nav-item {
+    margin: auto;
+}
+
+.itemsell .nav-item .nav-link {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 15px 30px;
+}
+
+.itemsell .nav-item .nav-link:hover {
+    background-color: #fbfbfb !important;
+}
+
+.itemsell .tab-pane {
+    border-top: 1px solid #e9eaed;
+}
+
+.itemsell .tab-price {
+    border-bottom: 1px solid #e9eaed;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.itemsell .btn-sell {
+    width: 150px;
+    float: right;
+}
+
+.itemsell .tab-price .eth {
+    width: 30px;
+    height: 30px;
+}
+
+.itemsell .tab-price span {
+    font-size:20px;
+}
+
+.itemsell .form-control {
+    font-family: "Roboto" !important;
+    width: 100px;
+}
+
+.tab-value {
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,111 @@
+{
+  "name": "ethereum-boilerplate",
+  "version": "0.1.0",
+  "dependencies": {
+    "@ant-design/icons": "^4.7.0",
+    "@babel/core": "^7.15.8",
+    "@emotion/cache": "11.7.1",
+    "@emotion/react": "11.7.1",
+    "@emotion/styled": "11.6.0",
+    "@ethersproject/contracts": "^5.6.2",
+    "@mui/icons-material": "5.4.1",
+    "@mui/material": "5.4.1",
+    "@mui/styled-engine": "5.4.1",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "@truffle/hdwallet-provider": "^2.0.3",
+    "@walletconnect/web3-provider": "^1.6.6",
+    "antd": "^4.16.13",
+    "bootstrap": "^5.1.3",
+    "chart.js": "3.4.1",
+    "chroma-js": "2.4.2",
+    "classnames": "^2.3.1",
+    "cra-template": "1.1.2",
+    "ethers": "^5.6.9",
+    "font-awesome": "^4.7.0",
+    "magic-sdk": "7.0.0",
+    "moment": "^2.29.3",
+    "moment-timezone": "^0.5.34",
+    "moralis": "^1.8.0",
+    "prop-types": "15.8.1",
+    "react": "^17.0.2",
+    "react-advanced-datetimerange-picker": "^1.0.14",
+    "react-blockies": "^1.4.1",
+    "react-bootstrap": "^2.1.2",
+    "react-chartjs-2": "3.0.4",
+    "react-countdown": "^2.3.2",
+    "react-date-countdown-timer": "^1.1.0",
+    "react-dom": "^17.0.2",
+    "react-dropdown": "^1.9.2",
+    "react-github-btn": "1.2.1",
+    "react-image-upload": "^2.0.1",
+    "react-infinite-scroll-component": "^6.1.0",
+    "react-lazy-load-image-component": "^1.5.1",
+    "react-moralis": "^1.4.0",
+    "react-multi-carousel": "^2.6.5",
+    "react-notifications": "^1.7.3",
+    "react-responsive-carousel": "^3.2.22",
+    "react-responsive-modal": "^6.2.0",
+    "react-router": "^5.2.1",
+    "react-router-dom": "^5.3",
+    "react-scripts": "^4.0.3",
+    "react-table": "7.7.0",
+    "stylis": "4.0.13",
+    "stylis-plugin-rtl": "2.1.1",
+    "uuidv4": "^6.2.13",
+    "web-vitals": "^1.0.1",
+    "web3": "^1.7.1",
+    "yarn": "^1.22.17",
+    "yup": "0.32.11"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts --expose-gc --max-old-space-size=8192 build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "devchain": "node Truffle/scripts/devChain.js",
+    "connect": "moralis-admin-cli connect-local-devchain",
+    "watch:events": "moralis-admin-cli add-contract",
+    "deploy": "node Truffle/scripts/deployContract.js",
+    "deploypage": "gh-pages -d build",
+    "clean": "npx gh-pages-clean",
+    "lint:check": "eslint .",
+    "lint:fix": "eslint --fix",
+    "prettier:check": "prettier --check .",
+    "prettier:fix": "prettier --write \"**/*.{js,jsx,ts,tsx,css,md,json,html}\" .prettierrc --config ./.prettierrc",
+    "format": "npm run lint:fix && npm run prettier:fix",
+    "prepare": "husky install"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "eslint": "^7.11.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "gh-pages": "^3.2.3",
+    "husky": "^7.0.0",
+    "prettier": "^2.5.1"
+  },
+  "resolutions": {
+    "react-error-overlay": "6.0.9"
+  }
+}

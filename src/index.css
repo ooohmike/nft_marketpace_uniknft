@@ -1,0 +1,94 @@
+@font-face {
+  font-family: 'PagesGrotesqueRegularDemo';
+  src: url("./assets/fonts/PagesGrotesqueRegularDemo.otf") format('opentype');
+}
+
+@font-face {
+  font-family: 'QfortheMemories';
+  src: url("./assets/fonts/QfortheMemories.otf") format('opentype');
+} 
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body {
+  text-rendering: optimizeSpeed;
+  background-color: white;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+                'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 
+                PagesGrotesqueRegularDemo, QfortheMemories,
+                sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height:inherit;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+article > * + * {
+  margin-top: 1em;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.font-family-1 {
+  font-family: "PagesGrotesqueRegularDemo" !important;
+}
+
+.font-family-2 {
+  font-family: "QfortheMemories" !important;
+}
+
+iframe {
+  z-index: -132234234 !important;
+}

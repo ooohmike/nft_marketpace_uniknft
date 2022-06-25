@@ -1,0 +1,153 @@
+.footer-container {
+    background-color: #2e2e2e;
+    font-family: "PagesGrotesqueRegularDemo";
+}
+
+.img-responsive {
+    max-width: 100%;
+}
+
+.footer {
+    max-width: 780px;
+    min-height: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    font-weight: bold;
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.right {
+    width: 20%;
+}
+
+.footer-text {
+    max-width: 195px;
+    font-size: 42px;
+}
+
+.center {
+    padding: 0px 16px 0px 26px;
+    width: calc(100% - 195px);
+}
+
+.subscribe-form {
+    width: 100%;
+}
+
+.subscribe-form div {
+    margin: 20px 0px;
+    overflow: hidden;
+}
+
+.subscribe-form input {
+    width: 100%;
+}
+
+.subscribe-form input[type="text"] {
+    padding: 30px 40px;
+    font-size: 20px;
+    border: none;
+}
+
+.subscribe-form input[type="text"]:focus {
+    outline: none;
+}
+
+.subscribe-form input[type="button"] {
+    padding: 30px 40px;
+    font-size: 20px;
+    background-color: #b6a48c;
+    border: none;
+    text-align: left;
+    color: #fff;
+    font-weight: bold;
+}
+
+.social {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 158px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.social-links div {
+    background-color: #b6a48c;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-links div i {
+    font-size: 30px;
+    color: #2e2e2e;
+}
+
+@media only screen and (max-width: 1100px) { 
+    .left {
+        display: block;
+    }
+
+    .footer-text {
+        width: 98%;
+    }
+
+    .center {
+        width: 98%;
+    }
+}
+
+@media only screen and (max-width: 992px) { 
+    .footer {
+        display: block;
+        padding-right: 66px;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .center {
+        padding: 0;
+    }
+
+    .right {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+        padding-bottom: 50px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .footer {
+        padding: 0px 20px;
+    }
+
+    .footer-text {
+        font-size: 50px;
+    }
+}
+
+.firstName {
+    margin-top: 0px !important;
+}

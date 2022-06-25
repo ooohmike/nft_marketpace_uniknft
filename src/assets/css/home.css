@@ -1,0 +1,532 @@
+.home {
+  padding: 0px 20px;
+  padding-bottom: 100px;
+  width: 100%;
+}
+
+.home .banner-item.slide-item  img{
+  width: 100%
+}
+
+.drop-subscription {
+  max-width: 1034px;
+  min-height: 188px;
+  margin: 0 auto;
+  margin-bottom: 63px;
+  margin-top: 70px;
+  text-align: center;
+}
+
+.drop-subscription .img-container {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.drop-subscription .subscription button {
+  height: 50px;
+  width: 195px;
+  font-size: 27px;
+  font-weight: 800;
+  background-color: #fc0000;
+  color: white;
+  border: 0px;
+  cursor: pointer;
+}
+
+.react-responsive-modal-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.react-responsive-modal-container form {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.react-responsive-modal-container form .btn-submit {
+  padding: 10px;
+  background-color: #71969f;
+  border: 1px solid #71969f;
+  outline: none;
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.email-address {
+  flex: 1;
+  margin-right: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid gray;
+  font-size: 16px;
+}
+
+.product-item.drop-item {
+  margin-left: 10px;
+  margin-right: 10px;
+  max-width: 100%;
+}
+
+.product-item.drop-item .market-img-container img {
+  aspect-ratio: 1/1;
+  height: auto;
+}
+
+.tools {
+  max-width: 1080px;
+  min-height: 271px;
+  margin: 0px auto;
+  margin-top: 40px;
+}
+
+.featured-art-title {
+  max-width: 658px;
+  min-height: 100px;
+  margin: 0px auto;
+  margin-top: 95px;
+  margin-bottom: 55px;
+}
+
+.featured-art-name {
+  margin-top: 10px;
+  font-size: 34px;
+}
+
+.auction-date {
+  color: #fce4a8;
+  margin-top: 10px;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.auction-content {
+  max-width: 1166px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.auction-item {
+  /* max-width: 361px; */
+  position: relative;
+  font-size: 14px;
+  margin-bottom: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.auction-item .auction-item-image {
+  width: 100%;
+  aspect-ratio: 1/1.1;
+  border-radius: 10px;
+}
+
+.reserve-met {
+  position: absolute;
+  width: 143px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  top: 40px;
+}
+
+.reserve-met-background {
+  background-color: #b4aca0;
+}
+
+.reserve-met-background-second {
+  background-color: #6699ff;
+}
+
+.reserve-met-background-third {
+  background-color: #3abe78;
+}
+
+.author-first {
+  border-radius: 50%;
+  border: 5px solid #ff41cc;
+}
+
+.author-second {
+  border-radius: 50%;
+  border: 5px solid #31b1b1;
+}
+
+.author-third {
+  border-radius: 50%;
+  border: 5px solid #fff000;
+}
+
+.auction-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3px;
+}
+
+.auction-detail {
+  position: relative;
+  color: #fff;
+  min-height: 150px;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 14px;
+  padding-top: 50px;
+}
+
+.author-avatar {
+  position: absolute;
+  top: 14px;
+  right: 30px;
+}
+
+.price {
+  margin-top: 10px;
+  font-size: 26px;
+}
+
+.real-price {
+  margin-left: 10px;
+}
+
+.end-block {
+  margin-top: 10px;
+  font-weight: initial;
+}
+
+.end-block i {
+  margin-left: 5px;
+}
+
+.auction-time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.time-value {
+  font-size: 30px;
+}
+
+.time-caption {
+  margin-top: 10px;
+  font-weight: initial;
+}
+
+@media only screen and (max-width: 500px) {
+  .auction-item {
+    /* max-width: 320px; */
+  }
+}
+
+.featured-art {
+  max-width: 1166px;
+  min-height: 100px;
+  background-color: #313131;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  margin-bottom: 26px;
+  margin-top: 100px;
+}
+
+.live-auctions {
+  max-width: 600px;
+  min-height: 110px;
+  margin: 0 auto;
+  margin-bottom: 47px;
+  margin-top: 70px;
+}
+
+.featured-art .img-container {
+  text-align: center;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.featured-content {
+  max-width: 1166px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.featured-item {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 40px;
+  max-width: 575px;
+}
+
+.featured-item img {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
+@media only screen and (max-width: 1189px) {
+  .featured-content {
+    justify-content: center;
+  }
+}
+
+.top-art {
+  max-width: 1166px;
+  min-height: 100px;
+  background-color: #ff41cc;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  margin-bottom: 26px;
+  margin-top: 100px;
+}
+
+.top-art .img-container {
+  text-align: center;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.top-content {
+  /* max-width: 1166px; */
+  margin: 0 auto;
+  /* display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; */
+}
+
+.top-item {
+  /* max-width: 360px; */
+  margin-bottom: 50px;
+}
+
+.top-item img {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
+.top-item-caption {
+  background-color: #313131;
+  margin-top: -5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #d71a9b;
+  font-size: 14px;
+  padding: 15px 0px;
+}
+
+.top-item-author {
+  width: 45px;
+  height: 45px;
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 1119px) {
+  .top-content {
+    justify-content: space-around;
+  }
+}
+
+.top-collectors-title {
+  margin: 0px auto;
+  margin-top: 120px;
+  margin-bottom: 70px;
+  max-width: 930px;
+  min-height: 115px;
+}
+
+.top-collectors-content {
+  /* max-width: 1166px; */
+  margin: 0 auto;
+  /* display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; */
+}
+
+.collector-item {
+  /* max-width: 276px; */
+}
+
+.collector-item-caption {
+  background-color: #313131;
+  margin-top: -5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  min-height: 55px;
+}
+
+@media only screen and (max-width: 768px) {
+  .top-collectors-content {
+    justify-content: space-around;
+  }
+}
+
+.slide-item img {
+  max-height: 100%;
+  max-height: 592px;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.nfts {
+  width: 100%;
+  background-color: #414950;
+  margin-top: 40px;
+}
+
+.nfts .img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nfts .img-container .img-responsive {
+  margin-top: 40px;
+  margin-bottom: 25px;
+}
+
+.nfts .carousels {
+  display: flex;
+}
+
+.nfts .carousels .img-container {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 45px;
+}
+
+.nfts .carousels .img-container .img-responsive {
+  width: 100%;
+}
+
+.carousel-name {
+  font-size: 14px;
+  color: white;
+}
+
+@media only screen and (max-width: 750px) {
+  .carousel-name {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 615px) {
+  .carousel-name {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 525px) {
+  .carousel-name {
+    font-size: 8px;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .carousel-name {
+    font-size: 6px;
+  }
+}
+
+.top-artists {
+  max-width: 560px;
+  min-height: 115px;
+  margin: 0px auto;
+  margin-top: 95px;
+  margin-bottom: 85px;
+}
+
+.img-artist-profile,
+.img-collector-profile {
+  aspect-ratio: 1/1;
+}
+
+.top-item-author .img-responsive {
+  width: 100%;
+}
+
+.learn-more {
+  width: 100%;
+  margin: 0px auto;
+  margin-top: 75px;
+  margin-bottom: 120px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.learn-more-subscription button {
+  height: 50px;
+  width: 195px;
+  font-size: 15px;
+  background-color: #000000;
+  color: white;
+  border: 0px;
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+.create-nft {
+  max-width: 1060px;
+  min-height: 150px;
+  margin: 0px auto;
+  margin-top: 90px;
+  margin-bottom: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.create-nft .vertical-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.create-nft .up-down {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.create-nft .up-down button {
+  border: 0px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.carousel-colulmn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.react-multi-carousel-track {
+  margin-bottom: 45px !important;
+}
