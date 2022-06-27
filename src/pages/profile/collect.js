@@ -81,14 +81,15 @@ const Collect = ({ address }) => {
 		}
 	}
 
-	const link2detail = (nft) => {
-
+	const link2detail = (props) => {
+		const nft = props.attributes
 		console.log(nft)
 		if (nft.hasOwnProperty('nftId')) {
 			console.log(nft.nftId)
 			history.push("/asset/" + nft.contractAddress + "/" + nft.nftId);
 		} else {
 			console.log("no nft Id")
+			history.push("/asset/" + nft.contractAddress + "/" + nft.uniqueId);
 		}
 
 	}
@@ -175,7 +176,7 @@ const Collect = ({ address }) => {
 	const render_market_item = (props, index) => {
 		const nft = props.attributes
 		return (
-			<div className={view} onClick={() => link2detail(nft)} key={index} style={{ border: "1px solid #eee", margin: "10px" }}>
+			<div className={view} onClick={() => link2detail(props)} key={index} style={{ border: "1px solid #eee", margin: "10px" }}>
 				<div className="hear-score">
 					<i className="fa fa-heart-o customize-heart" />
 					<span className="socre-value">{nft.likes}</span>
@@ -207,13 +208,19 @@ const Collect = ({ address }) => {
 					</div>
 					<div className="for-market">
 						{
+							!nft.active ?
+								<>Not on sale</>
+								:
+								<></>
+						}
+						{/* {
 							!nft.active && (
 								<>
 									<BtnReact className="for-market-btn">Edit</BtnReact>
 									<BtnReact variant="primary" className="for-market-btn" onClick={() => goSellPage(props)}>Sell</BtnReact>
 								</>
 							)
-						}
+						} */}
 					</div>
 				</div>
 			</div>

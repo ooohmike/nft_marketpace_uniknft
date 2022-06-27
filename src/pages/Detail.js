@@ -23,6 +23,7 @@ import { MarketContract } from 'helpers/marketInfo.js';
 import { Contract } from 'helpers/contractInfo';
 // import avatar from 'assets/img/profile/avatar.jpg';
 import { chainNum, chainUrl, chain } from '../helpers/networks'
+import { LeftCircleFilled } from "@ant-design/icons";
 
 const PRICE_URL = "https://api.coingecko.com/api/v3/simple/price?ids=ethereum%2Cmatic-network%2Cfantom%2Cbinancecoin&vs_currencies=eth"
 
@@ -234,11 +235,18 @@ const Detail = () => {
 		}
 		// {/* <Link to={"/account/" + text}>{getUserName(text)}</Link> */}
 	]
-	const { data } = useMoralisQuery("NFTs", query =>
-		query
-			.equalTo("contractAddress", address)
-			.equalTo("nftId", nftId)
-	);
+
+	let { data } = useMoralisQuery("NFTs", query => {
+		if (parseInt(nftId)) {
+			return query
+				.equalTo("contractAddress", address)
+				.equalTo("nftId", nftId)
+		} else {
+			return query
+				.equalTo("contractAddress", address)
+				.equalTo("uniqueId", nftId)
+		}
+	});
 
 	useEffect(() => {
 		if (!data?.length) return;
@@ -315,6 +323,7 @@ const Detail = () => {
 	}
 
 	const handleSellClick = (addr, id) => {
+		console.log(addr, id)
 		history.push("/sell/" + addr + "/" + id);
 	}
 
@@ -623,7 +632,7 @@ const Detail = () => {
 								<Accordion.Item eventKey="0">
 									<Accordion.Header style={{ fontWeight: 'bold' }}><i className="fa fa-align-justify" />&nbsp;Description</Accordion.Header>
 									<Accordion.Body>
-										{item?.desciption}
+										{item?.description}
 									</Accordion.Body>
 								</Accordion.Item>
 								<Accordion.Item eventKey="1">
@@ -732,7 +741,10 @@ const Detail = () => {
 								<br />
 								<Row>
 									{account === item?.currentOwner && !item?.active && <Col>
-										<Button variant="primary" size="lg" onClick={() => handleSellClick(item?.contractAddress, item?.nftId)}>
+										<Button variant="primary" size="lg" style={{ marginRight: '20px' }}>
+											Edit
+										</Button>
+										<Button variant="primary" size="lg" onClick={() => handleSellClick(item?.currentOwner, item?.uniqueId)}>
 											Sell
 										</Button>
 									</Col>}
