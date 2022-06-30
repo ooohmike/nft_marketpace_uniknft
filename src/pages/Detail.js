@@ -237,16 +237,19 @@ const Detail = () => {
 	]
 
 	let { data } = useMoralisQuery("NFTs", query => {
-		if (parseInt(nftId)) {
+		if (typeof nftId == 'number') {
+			console.log("NUMBer", nftId)
 			return query
 				.equalTo("contractAddress", address)
 				.equalTo("nftId", nftId)
 		} else {
+			console.log("Not number", nftId)
 			return query
 				.equalTo("contractAddress", address)
 				.equalTo("uniqueId", nftId)
 		}
 	});
+	console.log("data: ", data)
 
 	useEffect(() => {
 		if (!data?.length) return;
@@ -599,7 +602,7 @@ const Detail = () => {
 	}
 
 	useEffect(() => {
-		console.log('width', card.current ? card.current.offsetWidth : 0);
+		// console.log('width', card.current ? card.current.offsetWidth : 0);
 		setImgHeight(card.current ? card.current.offsetWidth : imgHeight);
 	}, [card.current]);
 

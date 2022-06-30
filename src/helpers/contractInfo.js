@@ -1,9 +1,9 @@
 export const Contract = {
   "0x3": '0xa904C4e4bd367b6b5575739DCc8f459Ab9AeD1E1', // ropsten testnet new
   "0x4": "0xf4926dcFA27291Af87c301b11a5aAdC5A955efb3",
-  "0x13881": '0x51EA26Efa5503901a6731c607e2302E4a73F67B7', // polygon mumbai testnet new
+  "0x13881": '0x40aBb8b76be3c05cf46770DFD8ceCA7139f39cf8', // polygon mumbai testnet new
   "0x61": '0xAcC0f0A34b5e4bd8D90451acbf063E6C727B811c', // binance testnet new
-  "0xfa2": '0x51EA26Efa5503901a6731c607e2302E4a73F67B7', // fantom opera testnet new
+  "0xfa2": '0x2F0F3A42F3f53386AE6b58E379e1072CbE468C30', // fantom opera testnet new
   "0x1": "0x59A43E82f9ae559A56c83f4457d70fEeC5eCa97C",//ether main,
   "0x38": "0x9bd45EB3CB688c825c129783199f24A7e066Af3f", //binance,
   "0x89": "0xf3985F30663dA78924464023982DaBAf4B542c5C", //polygon,
