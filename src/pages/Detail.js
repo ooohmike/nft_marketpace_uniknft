@@ -235,9 +235,9 @@ const Detail = () => {
 		}
 		// {/* <Link to={"/account/" + text}>{getUserName(text)}</Link> */}
 	]
-
+	console.log("nftId:::: ", Number(nftId))
 	let { data } = useMoralisQuery("NFTs", query => {
-		if (typeof nftId == 'number') {
+		if (Number(nftId) == nftId) {
 			console.log("NUMBer", nftId)
 			return query
 				.equalTo("contractAddress", address)

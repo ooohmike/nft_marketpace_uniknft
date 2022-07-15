@@ -87,7 +87,7 @@ const ItemSell = () => {
 			console.log(item)
 			alert('Success');
 			setProcess(false);
-			alert(item?.attributes?.contractAddress)
+			// alert(item?.attributes?.contractAddress)
 			history.push('/asset/' + item?.attributes?.contractAddress + '/' + tokenId);
 		} catch (err) {
 			alert(err?.message ? err?.message : err);
