@@ -90,11 +90,6 @@ class Header extends Component {
                                 COLLECTIONS
                             </Link>
                         </div> */}
-                        <div className='menu-link'>
-                            <Link to='/create'>
-                                CREATE
-                            </Link>
-                        </div>
                         <div className='menu-link font-family'>
                             <Account />
                         </div>
@@ -132,12 +127,6 @@ class Header extends Component {
                     <div className="mobile-link">
                         <Link to="/collector">
                             COLLECTORS
-                        </Link>
-                    </div>
-
-                    <div className='mobile-link'>
-                        <Link to='/create'>
-                            CREATE
                         </Link>
                     </div>
 
